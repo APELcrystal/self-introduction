@@ -1,10 +1,10 @@
 
 .star {
     font-size: 30px;
-    color: gray; /* デフォルトの星の色 */
+    color: gray; 
     cursor: pointer;
 }
 
 .selected {
-    color: gold; /* 選択された星の色 */
+    color: gold; 
 }
