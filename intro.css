@@ -1,0 +1,43 @@
+
+#header .logo-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+    color: rgb(29, 167, 91);
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+#header {
+    display: flex; /* フレックスボックスを使用して中央配置 */
+    justify-content: center; /* 水平方向に中央に配置 */
+    align-items: center; /* 垂直方向に中央に配置 */
+    height: 90.5vh; /* ビューポート全体の高さを使用 */
+    background-image: url(../portfolio_5.png); /* 背景画像を設定 */
+    background-size: cover; /* 画像を要素全体にカバーさせる */
+    background-position: center; /* 画像を中央に配置 */
+    background-repeat: no-repeat; /* 画像を繰り返さない */
+    text-align: center; /* 文字を中央揃え */
+
+}
+
+/* ナビゲーションバーの文字サイズを大きく */
+.navbar-brand, .nav-link {
+    font-size: 1.5rem; /* 文字サイズを大きく */
+}
+
+/* ナビゲーション項目を均等に配置 */
+.navbar-nav {
+    display: flex;
+    justify-content: space-evenly; /* 項目を均等に配置 */
+    width: 100%; /* ナビゲーションバーの幅に合わせて配置 */
+}
+
+/* メニュー項目のパディングを大きく */
+.nav-link {
+    padding: 15px 25px; /* 上下15px、左右25pxのパディング */
+}
+
+/* ナビゲーションバー全体のパディングも大きくする */
+.navbar {
+    padding: 15px 0; /* 上下15pxのパディング */
+}
