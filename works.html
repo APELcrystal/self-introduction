@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/intro.css">
+    <link rel="stylesheet" href="../css/work.css">
+    <script src="../javasc/star.js"></script> <!-- 外部 JavaScript ファイルを読み込む -->
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-bottom-dark" data-bs-theme="dark" style="text-align: left;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Portfolio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="introduce.html">Home</a>
+                  <a class="nav-link" href="./profile.html">Profile</a>
+                  <a class="nav-link" href="./works.html">Works</a>
+                  <a class="nav-link" href="./skills.html">Skills</a>
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <table class="table" style="width: 600px; margin: 0 auto; text-align: center;">
+        <thead class="table-light table-option">
+            <tr>
+                <th>スキル</th>
+                <th>経験期間</th>
+                <th>習得度</th>
+            </tr>
+        </thead>
+        <tbody class="table-option">
+            <tr>
+                <td>Java</td>
+                <td>1ヶ月</td>
+                <td> 
+                    <div id="stars-java"></div>
+                    <script>
+                        // 星を生成し、初期表示で1つ星を選択する
+                        generateStars('stars-java', 5);
+                        //星の選択数を選択
+                        updateStars('stars-java', 1);
+                    </script>
+                </td>
+            </tr>
+
+            <tr>
+                <td>HTML/CSS/javascript</td>
+                <td>1ヶ月</td>
+                <td> 
+                    <div id="stars-html"></div>
+                    <script>
+                        // 星を生成し、初期表示で1つ星を選択する
+                        generateStars('stars-html', 5);
+                        //星の選択数を選択
+                        updateStars('stars-html', 1);
+                    </script>
+                </td>
+            </tr>
+
+            <tr>
+                <td>PHP(Larabel)</td>
+                <td>2週間</td>
+                <td> 
+                    <div id="stars-php"></div>
+                    <script>
+                        // 星を生成し、初期表示で1つ星を選択する
+                        generateStars('stars-php', 5);
+                        //星の選択数を選択
+                        updateStars('stars-php', 1);
+                    </script>
+                </td>
+            </tr>
+
+            <tr>
+                <td>MySQL</td>
+                <td>3日</td>
+                <td> 
+                    <div id="stars-mysql"></div>
+                    <script>
+                        // 星を生成し、初期表示で1つ星を選択する
+                        generateStars('stars-mysql', 5);
+                        //星の選択数を選択
+                        updateStars('stars-mysql', 1);
+                    </script>
+                </td>
+            </tr>
+
+            <tr>
+                <td>ネットワーク/Linux</td>
+                <td>1ヶ月</td>
+                <td> 
+                    <div id="stars-linux"></div>
+                    <script>
+                        // 星を生成し、初期表示で1つ星を選択する
+                        generateStars('stars-linux', 5);
+                        //星の選択数を選択
+                        updateStars('stars-linux', 1);
+                    </script>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+
+
+        <table class="table" style="width: 600px; margin: 0 auto; text-align: center;">
+            <thead class="table-light table-option">
+                <tr>
+                    <th>インターンシップ（実務経験）</th>
+                    <th>経験期間</th>
+                    <th>習得度</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>C#（Visual Studio .NET Framwork）</td>
+                    <td rowspan="3" style="text-align: center; vertical-align: middle;">1ヶ月</td>
+
+                    <td> 
+                        <div id="stars-C"></div>
+                        <script>
+                            // 星を生成し、初期表示で1つ星を選択する
+                            generateStars('stars-C', 5);
+                            //星の選択数を選択
+                            updateStars('stars-C', 1);
+                        </script>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>SQL Server</td>
+                    <td> 
+                        <div id="stars-sqlserver"></div>
+                        <script>
+                            // 星を生成し、初期表示で1つ星を選択する
+                            generateStars('stars-sqlserver', 5);
+                            //星の選択数を選択
+                            updateStars('stars-sqlserver', 1);
+                        </script>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>要件定義〜テスト</td>
+                    <td> 
+                        <div id="stars-decide"></div>
+                        <script>
+                            // 星を生成し、初期表示で1つ星を選択する
+                            generateStars('stars-decide', 5);
+                            //星の選択数を選択
+                            updateStars('stars-decide', 1);
+                        </script>
+                    </td>
+                </tr>
+    
+            </tbody>
+       
+
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
