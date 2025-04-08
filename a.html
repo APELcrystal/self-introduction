@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- LINE SDKの読み込み -->
+    <script src="https://d.line-scdn.net/liff/2.1/sdk.js"></script>
+</head>
+<body>
+    <button id="loginButton">LINEでログイン</button>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            // LIFFの初期化
+            liff.init({ liffId: "2007220411-3A4gKE1W" })
+                .then(() => {
+                    if (liff.isLoggedIn()) {
+                        // すでにログインしている場合
+                        liff.getProfile()
+                            .then(profile => {
+                                console.log("ユーザーID:", profile.userId);
+                                console.log("表示名:", profile.displayName);
+                                console.log("プロフィール画像URL:", profile.pictureUrl);
+                            })
+                            .catch(error => {
+                                console.error("プロフィール取得エラー:", error);
+                            });
+                    } else {
+                        // ログインしていない場合
+                        document.getElementById("loginButton").addEventListener("click", function () {
+                            liff.login();
+                        });
+                    }
+                })
+                .catch((error) => {
+                    console.error("LIFFの初期化に失敗:", error);
+                });
+        });
+    </script>
+
+</body>
+</html>
